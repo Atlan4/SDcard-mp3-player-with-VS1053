@@ -756,7 +756,7 @@ void help() {
   Serial.println(F("COMMANDS:"));
   Serial.println(F(" [a] Play ALL files to dir"));
   Serial.println(F(" [>] Play next file to dir"));
-  Serial.println(F(" [<] Play next file to dir"));
+  Serial.println(F(" [<] Play preview files to dir"));
   Serial.println(F(" [F] same as [f] but with initial skip of 2 second"));
   Serial.println(F(" [s] to stop playing"));
   Serial.println(F(" [d] display directory of SdCard LS"));

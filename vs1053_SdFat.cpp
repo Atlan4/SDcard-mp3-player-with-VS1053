@@ -1497,10 +1497,11 @@ void vs1053::Latin1toUTF8(char *buffer, unsigned char size){
           if (x==0xAB){infobufferUTF8[d++]=0xC5;infobufferUTF8[d++]=0XA4;} //Ť
           if (x==0xAE){infobufferUTF8[d++]=0xC2;infobufferUTF8[d++]=0X8E;} //Ž
           if (x==0xB5){infobufferUTF8[d++]=0XC2;infobufferUTF8[d++]=0X9A;} //ľ
-          if (x==0xB9){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XA1;} //š C29A
+          //if (x==0xB9){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XA1;} //š C29A
+          if (x==0x9A){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XA1;} //š C29A
           if (x==0xBB){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XA5;} //ť
-          if (x==0xBE){infobufferUTF8[d++]=0XC2;infobufferUTF8[d++]=0X9E;} //ž
-          //if (x==0x69){infobufferUTF8[d++]=0XC2;infobufferUTF8[d++]=0X9E;} //ž
+          //if (x==0xBE){infobufferUTF8[d++]=0XC2;infobufferUTF8[d++]=0X9E;} //ž
+          if (x==0x9E){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XBE;} //ž
           if (x==0xC1){infobufferUTF8[d++]=0XC3;infobufferUTF8[d++]=0X81;} //Á
           if (x==0xC8){infobufferUTF8[d++]=0xC4;infobufferUTF8[d++]=0x8C;} //Č
           if (x==0xC9){infobufferUTF8[d++]=0XC3;infobufferUTF8[d++]=0X89;} //É
@@ -1518,7 +1519,9 @@ void vs1053::Latin1toUTF8(char *buffer, unsigned char size){
           if (x==0xEF){infobufferUTF8[d++]=0XC4;infobufferUTF8[d++]=0X8F;} //ď
           if (x==0xF2){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0X88;} //ň
           if (x==0xF4){infobufferUTF8[d++]=0XC3;infobufferUTF8[d++]=0XB4;} //ô
+          if (x==0xD8){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0X98;} //R ceske R
           if (x==0xF8){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0X99;} //r ceske r
+          if (x==0xF9){infobufferUTF8[d++]=0XC5;infobufferUTF8[d++]=0XAF;} //u ceske u
           if (x==0xFA){infobufferUTF8[d++]=0XC3;infobufferUTF8[d++]=0XBA;} //ú
           if (x==0xFD){infobufferUTF8[d++]=0XC3;infobufferUTF8[d++]=0XBD;} //ý
            }
